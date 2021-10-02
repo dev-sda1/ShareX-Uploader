@@ -1,13 +1,13 @@
 [Unit]
 
 Description=uWSGI Instance for ShareX-CustomUpload
-After=network.target[service]
+After=network.target
 
 [Service]
 User=ADD_USER_HERE
-Group=ADD_USER_HERE
+Group=www-data
 WorkingDirectory=ADD_DIRECTORY_HERE
-Environment="ADD_DIRECTORY_HERE/ENV_FOLDER/bin"
+Environment="PATH=ADD_DIRECTORY_HERE/ENV_FOLDER/bin"
 ExecStart=ADD_DIRECTORY_HERE/ENV_FOLDER/bin/uwsgi --ini ShareXUploader.ini
 
 [Install]
