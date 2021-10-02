@@ -1,7 +1,10 @@
 # ShareX Uploader
 A custom uploader for ShareX and others written in Python with Flask.
 
-# Setting up server
+# Setting up and running the server
+These steps are for NGINX users. Apache users can find links to their own steps at the footer. 
+Users running this off of serverless solutions like Heroku should consult their service's documentation for how to deploy.
+
 1) Run ``sudo apt update`` then Install the required Python packages with: ``sudp apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools`` (how you acquire them depends on your distribution)
 2) Run ``sudo apt install python3-venv``.
 3) Visit your directory of choice where you wish the project to be located on your server and run ``git clone https://github.com/dev-sda1/ShareX-Uploader.git``
@@ -38,9 +41,27 @@ A custom uploader for ShareX and others written in Python with Flask.
 7) Restart nginx with ``sudo systemctl restart nginx``, then navigate to your domain to see if it worked! (You should see a file not found error - this is normal)
 
 ## Setting up ShareX
+1) Download the example template [here](https://github.com/dev-sda1/ShareX-Uploader/blob/main/example_upload.sxcu)
+2) Double click it and select "yes" on the prompt that shows up 
+![image](https://user-images.githubusercontent.com/43112896/135697173-7dc395c8-da8c-49cf-947d-b32f7af7fa98.png)
+
+3) Your custom upload defaults should now change to the template you just imported. Begin by editing the Request URL to your domain.
+![image](https://user-images.githubusercontent.com/43112896/135697195-b9385b6b-3b98-4e17-b677-7115c3a4544e.png)
+
+4) Add the secret you added to your server's config.json earlier into the form value.
+![image](https://user-images.githubusercontent.com/43112896/135697210-09ac7819-646a-4f92-9e5a-b9ab1deedec2.png)
+
+5) Scroll down to the URL section and change ``yourdomain.here`` to your domain.
+![image](https://user-images.githubusercontent.com/43112896/135697227-804eef68-5964-4f74-8171-b6003460f1bf.png)
+
+6) Click the "Test" button next to Image uploader and see if you get a response. If you get something similar to the screenshot below, you're good to go! Otherwise, you might need to check your secret or URL settings. If it's not that, it might be something on the server. 
+
+![image](https://user-images.githubusercontent.com/43112896/135697261-f50ad6bf-146a-4baf-90dc-7df56ab5d419.png)
 
 
-# Running the server
-These steps are for NGINX users. Apache users can find links to their own steps at the footer. 
-Users running this off of serverless solutions like Heroku should consult their service's documentation for how to deploy.
+# Other server instructions
+If you use another solution like Apache, you can find instructions tailored to your server here:
+https://www.codementor.io/@abhishake/minimal-apache-configuration-for-deploying-a-flask-app-ubuntu-18-04-phu50a7ft
+
+Note that as said earlier if you use a serverless service like Heroku to host this, you will need to consult your service's documentation for the best way to deploy without issues.
 
