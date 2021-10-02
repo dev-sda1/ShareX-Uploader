@@ -2,6 +2,8 @@
 A custom uploader for ShareX images and files for your server written in Python with Flask.
 Currently in beta, there may be some issues. If you do find any please raise a GH issue to let me know
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E1HLTE)
+
 # Setting up and running the server
 These steps are for NGINX users. Apache users can find links to their own steps at the footer. 
 Users running this off of serverless solutions like Heroku should consult their service's documentation for how to deploy.
