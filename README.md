@@ -1,5 +1,6 @@
 # ShareX Uploader
-A custom uploader for ShareX and others written in Python with Flask.
+A custom uploader for ShareX images and files for your server written in Python with Flask.
+Currently in beta, there may be some issues. If you do find any please raise a GH issue to let me know
 
 # Setting up and running the server
 These steps are for NGINX users. Apache users can find links to their own steps at the footer. 
