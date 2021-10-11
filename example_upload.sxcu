@@ -6,7 +6,8 @@
   "RequestURL": "https://yourdomain.here/upload",
   "Body": "MultipartFormData",
   "Arguments": {
-    "secret": "SECRET_HERE"
+    "secret": "SECRET_HERE",
+    "url": "$input$"
   },
   "FileFormName": "sharex",
   "URL": "https://yourdomain.here/$json:file$"

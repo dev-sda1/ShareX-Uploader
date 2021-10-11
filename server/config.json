@@ -1,4 +1,4 @@
 {
-    "secret": "owowowowo",
+    "secret": "YOUR_SECRET_HERE",
     "webPort": 5642
 }
