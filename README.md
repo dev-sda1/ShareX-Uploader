@@ -55,7 +55,7 @@ Users running this off of serverless solutions like Heroku should consult their 
 
 4) Add the secret you added to your server's config.json earlier into the form value.
 
-![image](https://user-images.githubusercontent.com/43112896/136977057-4f993496-6d09-46b5-8bf0-e975b43ea9d6.png)
+![image](https://user-images.githubusercontent.com/43112896/136977404-e89c32f6-b6f2-4c2c-b7e9-761b9bb868d1.png)
 
 5) Scroll down to the URL section and change ``yourdomain.here`` to your domain.
 
