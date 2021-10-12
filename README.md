@@ -46,15 +46,19 @@ Users running this off of serverless solutions like Heroku should consult their 
 ## Setting up ShareX
 1) Download the example template [here](https://github.com/dev-sda1/ShareX-Uploader/blob/main/example_upload.sxcu)
 2) Double click it and select "yes" on the prompt that shows up 
+
 ![image](https://user-images.githubusercontent.com/43112896/135697173-7dc395c8-da8c-49cf-947d-b32f7af7fa98.png)
 
 3) Your custom upload defaults should now change to the template you just imported. Begin by editing the Request URL to your domain.
+
 ![image](https://user-images.githubusercontent.com/43112896/135697195-b9385b6b-3b98-4e17-b677-7115c3a4544e.png)
 
 4) Add the secret you added to your server's config.json earlier into the form value.
-![image](https://user-images.githubusercontent.com/43112896/135697210-09ac7819-646a-4f92-9e5a-b9ab1deedec2.png)
+
+![image](https://user-images.githubusercontent.com/43112896/136977057-4f993496-6d09-46b5-8bf0-e975b43ea9d6.png)
 
 5) Scroll down to the URL section and change ``yourdomain.here`` to your domain.
+
 ![image](https://user-images.githubusercontent.com/43112896/135697227-804eef68-5964-4f74-8171-b6003460f1bf.png)
 
 6) Click the "Test" button next to Image uploader and see if you get a response. If you get something similar to the screenshot below, you're good to go! Otherwise, you might need to check your secret or URL settings. If it's not that, it might be something on the server. 
