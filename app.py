@@ -86,7 +86,6 @@ def random_string(length):  # Generate a random string for use in URLs.
 
 @app.post('/upload')
 def uploadContent():
-    print("OwO an upload")
     r = None
     reqParams = request.form
     #print(request.files)
